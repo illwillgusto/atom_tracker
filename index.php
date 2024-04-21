@@ -64,6 +64,7 @@
 
   </div>
 
+  <script src="atom.tracker.js"></script>
 
 </body>
 </html>
