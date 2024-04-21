@@ -52,8 +52,9 @@
             <td>Data</td>
             <td>Data</td>
             <td>Data</td>
+            <td>Data</td>
             <td><button class="btn btn-primary">Stop</button></td>
-            <td>Button</td>
+            <td><button class="btn btn-secondary">X</button></td>
           </tr>
         </tbody>
       </table>
