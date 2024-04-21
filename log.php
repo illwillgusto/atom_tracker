@@ -7,5 +7,5 @@ $array = json_decode($data, 1);
 ?>
 
 <pre> <!-- this will be used to dump out the values -->
-  <? print_r($array) ?>
+  <?php print_r($array) ?>
 </pre>
