@@ -1,4 +1,5 @@
 <?php
+include('functions.php');
 
 $json = file_get_contents('data.json');
 $data = json_decode($json, 1);
@@ -8,9 +9,8 @@ $data = json_decode($json, 1);
 <?php
 
 
-    foreach ($data as $task) { //task is holding the information that can then be echoed
+    foreach ($data as $task) {?> <!-- task is holding the information that can then be echoed -->
 
-?>
     <tr>
       <td><?= $task['name'] ?></td>
       <td>Data</td>

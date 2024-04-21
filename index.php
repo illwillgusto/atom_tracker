@@ -49,10 +49,7 @@
           </tr>
         </thead>
 
-        <tbody id="log">
-
-
-        </tbody>
+        <tbody id="log"></tbody>
       </table>
 
 
