@@ -7,5 +7,23 @@ function i($code){
  return $icon;
 }
 
-
 ?>
+
+  <?php
+
+          $data = file_get_contents('data.json');
+
+          $array = json_decode($data, 1);
+
+          foreach ($array as $task) { //task is holding the information that can then be echoed
+
+            ?>
+          <tr>
+            <td><?= $task['name'] ?></td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td><button class="btn btn-primary"><?= i('stop')?></button></td>
+            <td><button class="btn btn-danger"><?= i('times')?></button></td>
+            </tr>
+          <?php }?>
