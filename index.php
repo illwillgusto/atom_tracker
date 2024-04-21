@@ -50,6 +50,16 @@
         </thead>
 
         <tbody id="log">
+
+        <?php
+
+$data = file_get_contents('data.json');
+
+$array = json_decode($data, 1);
+
+
+
+?>
           <tr>
             <td>Data</td>
             <td>Data</td>
