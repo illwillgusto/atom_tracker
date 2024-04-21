@@ -1,4 +1,5 @@
-<?include('functions.php')?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@
             </div>
 
             <div class="col-xs-4">
-              <button type="submit" name="submit" class="btn btn-block btn-success"><?=i('play')?></button>
+              <button type="submit" name="submit" class="btn btn-block btn-success">Start</button>
             </div>
           </div>
         </form>
@@ -54,8 +55,8 @@
             <td>Data</td>
             <td>Data</td>
             <td>Data</td>
-            <td><button class="btn btn-primary"><?=i('stop')?></button></td>
-            <td><button class="btn btn-secondary"><?=i('times')?></button></td>
+            <td><button class="btn btn-primary">Stop</button></td>
+            <td><button class="btn btn-secondary">X</button></td>
           </tr>
         </tbody>
       </table>
