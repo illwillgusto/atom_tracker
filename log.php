@@ -13,9 +13,9 @@ $data = json_decode($json, 1);
 
     <tr>
       <td><?= $task['name'] ?></td>
-      <td>Data</td>
-      <td>Data</td>
-      <td>Data</td>
+      <td><?= $task['date_start'] ?></td>
+      <td><?= $task['date_end'] ?></td>
+      <td><?= $task['status'] ?></td>
       <td><button class="btn btn-primary"><?= i('stop')?></button></td>
       <td><button class="btn btn-danger"><?= i('times')?></button></td>
     </tr>
