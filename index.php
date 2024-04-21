@@ -23,8 +23,8 @@
             <div class="col-xs-10">
               <input id="task" class="form-control" name="task" placeholder="Enter new task name...">
             </div>
-            <div>
-              <button></button>
+            <div class="col-xs-2">
+              <button type="submit" name="submit" class="btn btn-block btn-success"><?=i('play')?></button>
             </div>
           </div>
         </form>
