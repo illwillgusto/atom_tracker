@@ -7,13 +7,14 @@ $(document).ready(function() {
     event.preventDefault();
 
     const form = $(this);
-    
+    const data = form.serialize();
 
 
 
 
     $.ajax({
-      url: 'log.php'
+      url: 'log.php',
+      data: data
     });
 
 
