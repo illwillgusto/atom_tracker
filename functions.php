@@ -7,5 +7,7 @@ function i($code){
  return $icon;
 }
 
+function date_nice($date) {
+  return date('M j Y h:i A', $date);
+}
 ?>
-
