@@ -64,6 +64,7 @@
 
   </div>
 
+  <!-- App Script -->
   <script src="atom.tracker.js"></script>
 
 </body>
