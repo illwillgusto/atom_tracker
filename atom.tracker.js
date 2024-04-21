@@ -6,6 +6,8 @@ $(document).ready(function() {
 
     event.preventDefault();
 
+    const form = $(this);
+    const task = $('#task').val();
 
   });
 
