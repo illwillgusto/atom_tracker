@@ -47,12 +47,20 @@
           </tr>
         </thead>
 
-        <tbody id="log"></tbody>
+        <tbody id="log">
+          <tr>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+            <td><button class="btn btn-primary">Stop</button></td>
+            <td>Button</td>
+          </tr>
+        </tbody>
       </table>
 
 
   </div>
 
-  
+
 </body>
 </html>
