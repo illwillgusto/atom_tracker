@@ -35,7 +35,15 @@
       <hr>
 
       <table class="table table-bordered table-stripped">
-
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Time</th>
+            <th colspan="2">Controls</th>
+          </tr>
+        </thead>
 
 
       </table>
