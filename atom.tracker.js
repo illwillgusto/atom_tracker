@@ -11,6 +11,10 @@ $(document).ready(function() {
 
     console.log(task);
 
+    $.ajax({
+      url: 'log.php'
+    });
+
 
   });
 
