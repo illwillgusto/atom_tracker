@@ -13,7 +13,7 @@ $data = json_decode($json, 1);
 
     <tr>
       <td><?= $task['name'] ?></td>
-      <td><?= $task['date_start'] ?></td>
+      <td><?= date_nice($task['date_start']) ?></td>
       <td><?= $task['date_end'] ?></td>
       <td><?= $task['status'] ?></td>
       <td><button class="btn btn-primary"><?= i('stop')?></button></td>
