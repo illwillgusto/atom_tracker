@@ -7,9 +7,10 @@ $(document).ready(function() {
     event.preventDefault();
 
     const form = $(this);
-    const task = $('#task').val();
+    
 
-    console.log(task);
+
+
 
     $.ajax({
       url: 'log.php'
