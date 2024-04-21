@@ -18,9 +18,9 @@ $data = json_decode($json, 1);
       <td>
         <?
           if($task['date_end'] == "") {
-            echo time_nice(time() -$task['date_start']); // this will determine how much time was elapse
+            echo time_nice(time() - $task['date_start']); // this will determine how much time was elapse
           }else {
-            echo time_nice(($taskk['date_end'] - $task['date_start']));
+            echo time_nice(($task['date_end'] - $task['date_start']));
           }
         ?>
       </td>
