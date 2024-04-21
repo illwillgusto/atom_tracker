@@ -57,7 +57,7 @@
 
           $array = json_decode($data, 1);
 
-          foreach ($array as $task) {
+          foreach ($array as $task) { //task is holding the information that can then be echoed 
 
             ?>
           <tr>
