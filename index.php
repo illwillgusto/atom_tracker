@@ -57,11 +57,11 @@
 
           $array = json_decode($data, 1);
 
-          foreach ($array as $task) { //task is holding the information that can then be echoed 
+          foreach ($array as $task) { //task is holding the information that can then be echoed
 
             ?>
           <tr>
-            <td>Data</td>
+            <td><?= $task['name'] ?></td>
             <td>Data</td>
             <td>Data</td>
             <td>Data</td>
