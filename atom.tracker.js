@@ -8,7 +8,9 @@ $(document).ready(function() {
 
     const form = $(this);
     const task = $('#task').val();
-    
+
+    console.log(task);
+
 
   });
 
