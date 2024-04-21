@@ -53,13 +53,13 @@
 
         <?php
 
-$data = file_get_contents('data.json');
+          $data = file_get_contents('data.json');
 
-$array = json_decode($data, 1);
+          $array = json_decode($data, 1);
 
+          foreach ($array as $task) {
 
-
-?>
+            ?>
           <tr>
             <td>Data</td>
             <td>Data</td>
@@ -67,7 +67,8 @@ $array = json_decode($data, 1);
             <td>Data</td>
             <td><button class="btn btn-primary"><?= i('stop')?></button></td>
             <td><button class="btn btn-danger"><?= i('times')?></button></td>
-          </tr>
+            </tr>
+          <?php }?>
         </tbody>
       </table>
 
