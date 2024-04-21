@@ -11,7 +11,7 @@
   <div class="container-fluid">
     <header class="row">
       <div class="col-xs-8">
-          <a data-mode="restore" id="btn-swap" href="#">Enter <span>Restore</span>Mode</a>
+          <a data-mode="restore" id="btn-swap" href="#">Enter <span>Restore </span>Mode</a>
       </div>
       <div class="col-xs-4 text-right">
           <strong>Total Hours:</strong><span id="tally"></span>
