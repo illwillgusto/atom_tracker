@@ -8,6 +8,6 @@
   <script src="https://kit.fontawesome.com/8716b95af6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Atom Tracker</h1>
+
 </body>
 </html>
