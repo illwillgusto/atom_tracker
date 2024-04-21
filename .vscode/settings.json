@@ -1,2 +1,4 @@
 {
+  "prettier.bracketSameLine": true,
+  "prettier.enableDebugLogs": true
 }
