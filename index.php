@@ -17,6 +17,23 @@
           <strong>Total Hours:</strong><span id="tally"></span>
       </div>
 
+      <div class="row">
+        <form id="form-new" method="get">
+          <div class="form-group">
+            <div class="col-xs-10">
+              <input id="task" class="form-control" name="task" placeholder="Enter new task name...">
+            </div>
+            <div>
+              <button></button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+
+
+
     </header>
   </div>
 </body>
