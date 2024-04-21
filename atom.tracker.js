@@ -12,4 +12,7 @@ $(document).ready(function () {
       data: data,
     });
   });
+
+  $('#log').load('log.php'); // allow us to take the data from the log.php and display it on the main page
+
 });
