@@ -20,15 +20,25 @@
       <div class="row">
         <form id="form-new" method="get">
           <div class="form-group">
+
             <div class="col-xs-10">
               <input id="task" class="form-control" name="task" placeholder="Enter new task name...">
             </div>
-            <div class="col-xs-2">
-              <button type="submit" name="submit" class="btn btn-block btn-success"><?=i('play')?></button>
+
+            <div class="col-xs-4">
+              <button type="submit" name="submit" class="btn btn-block btn-success">Start</button>
             </div>
           </div>
         </form>
       </div>
+
+      <hr>
+
+      <table class="table table-bordered table-stripped">
+
+
+
+      </table>
 
 
 
