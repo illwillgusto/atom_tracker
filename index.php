@@ -1,4 +1,4 @@
-
+<?php include('functions.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +30,7 @@
             </div>
 
             <div class="col-xs-4">
-              <button type="submit" name="submit" class="btn btn-block btn-success">Start</button>
+              <button type="submit" name="submit" class="btn btn-block btn-success"><?= i('play')?></button>
             </div>
           </div>
         </form>
