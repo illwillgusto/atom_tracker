@@ -55,8 +55,8 @@
             <td>Data</td>
             <td>Data</td>
             <td>Data</td>
-            <td><button class="btn btn-primary">Stop</button></td>
-            <td><button class="btn btn-secondary">X</button></td>
+            <td><button class="btn btn-primary"><?= i('stop')?></button></td>
+            <td><button class="btn btn-secondary"><?= i('times')?></button></td>
           </tr>
         </tbody>
       </table>
