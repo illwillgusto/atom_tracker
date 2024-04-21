@@ -1,22 +1,9 @@
 {
   "1": {
     "id": "1",
-    "name": "Sample Task"
-  },
-  "2": {
-    "id": "2",
-    "name": "Sample Task"
-  },
-  "3": {
-    "id": "3",
-    "name": "Sample Task"
-  },
-  "4": {
-    "id": "4",
-    "name": "Sample Task"
-  },
-  "5": {
-    "id": "5",
-    "name": "Sample Task"
+    "name": "Sample Task",
+    "date_start": 1713729249,
+    "date_end": "",
+    "status": 1
   }
 }
