@@ -16,14 +16,22 @@ if (!$data) {
 switch ($_GET['mode']) {
 
   case 'new':
-      $id = time();
-      $data[$id]['id'] = $id;
-      $data[$id]['task'] = $_GET['task'];
-      $data[$id]['date_start'] = $id;
-      $data[$id]['date_end'] = '';
-      $data[$id]['date_entered'] = $id;
-      $data[$id]['status'] = 1;
-      save($data); // Save changes
+    $id = time(); // Using time() as an ID is generally fine for simplicity but consider conflicts
+    $newTask = [
+        'id' => $id,
+        'name' => $_GET['task'], // Changed from 'task' to 'name' to match other case uses
+        'date_start' => $id,
+        'date_end' => '',
+        'date_entered' => $id,
+        'status' => 1
+    ];
+    $data[$id] = $newTask;
+    if (!save($data)) {
+        echo "Failed to save new task.";
+        exit;
+    } else {
+        echo "Task added successfully.";
+    }
     break;
 
   case 'tally':
