@@ -23,5 +23,6 @@ function time_nice($seconds) {
 function save($data) {
   $json = json_encode($data);
   $file = fopen("data.json", "w");
+  fwrite($file, $json);
 }
 ?>
