@@ -13,7 +13,7 @@ switch ($_GET['mode']) {
     <tr>
       <td><?= $task['name'] ?></td>
       <td><?= date_nice($task['date_start']) ?></td>
-      <td><?= $task['date_end'] ?></td>
+      <td><?= ($task['date_end'] != '')?date_nice($task['date_end']):'' ?></td>
       <td>
         <?
           if($task['date_end'] == "") {
