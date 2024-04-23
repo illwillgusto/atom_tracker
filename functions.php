@@ -27,6 +27,10 @@ function save($data) {
     return false; // Provide error feedback
   }
   $file = fopen('data.json', "w") or die("Unable to open file!"); //open the json file and prepare to use the write method
-  fwrite($file, $json); //write the file, which will overwrite everything
+  $bytes_written = fwrite($file, $json); //write the file, which will overwrite everything
+  if ($bytes_written == false) {
+    echo "Failed to write to file!";
+    return false;
+  }
 }
 ?>
