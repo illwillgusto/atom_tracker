@@ -26,7 +26,7 @@
           <div class="form-group">
 
             <div class="col-xs-10">
-              <input id="task" class="form-control" name="name" placeholder="Enter new task name...">
+              <input id="name" class="form-control" name="name" placeholder="Enter new task name...">
             </div>
 
             <div class="col-xs-4">
