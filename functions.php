@@ -22,7 +22,7 @@ function time_nice($seconds) {
 
 function save($data) {
   $json = json_encode($data); //covert the json data
-  $file = fopen("data.json", "w"); //open the json file and prepare to use the write method
-  fwrite($file, $json); //write the file, which will overwrite everything 
+  $file = fopen("data.json", "w") or die("Unable to open file!"); //open the json file and prepare to use the write method
+  fwrite($file, $json); //write the file, which will overwrite everything
 }
 ?>
