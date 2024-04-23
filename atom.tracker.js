@@ -4,6 +4,9 @@ function build() {
 
 
 $(document).ready(function () {
+
+build();
+
   $("#form-new").submit(function (event) {
     // when a form is submitted run a function
 
@@ -15,9 +18,13 @@ $(document).ready(function () {
     $.ajax({
       url: "log.php?mode=new",
       data: data,
+      success: function() {
+        build();
+      },
       method: 'GET'
     });
   });
+
 
   $('#tally').load('log.php?mode=tally'); //allow us to pull the data and display it in the Total Time log
 
