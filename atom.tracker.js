@@ -17,8 +17,8 @@ build();
 
     event.preventDefault();
 
-    const form = $(this);
-    const data = form.serialize();
+    var form = $(this);
+    var data = form.serialize();
 
     $.ajax({
       url: "log.php?mode=new",
