@@ -16,7 +16,7 @@
             <a data-mode="restore" id="btn-swap" href="#">Enter <span>Restore </span>Mode</a>
         </div>
     <div class="col-xs-4 text-right">
-          <strong>Total Hours:</strong><span id="tally"></span>
+          <strong>Total Time:</strong><span id="tally"></span>
     </div>
     </header>
 
