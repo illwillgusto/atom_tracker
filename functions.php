@@ -16,5 +16,7 @@ function time_nice($seconds) {
 
   $h = floor(($seconds/60)/60); // hours
   $m = round(($seconds/60)) - ($h * 60); // minutes
+
+  echo '<span class="hours">'.$h.'</span> hrs : <span class="minutes">'.$m.'</span> mins'; // Display result
 }
 ?>

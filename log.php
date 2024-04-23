@@ -21,15 +21,16 @@ switch ($_GET['mode']) {
         ?> <!-- task is holding the information that can then be echoed -->
     <tr>
       <td><?= $task['name'] ?></td>
-      <td><?= date_nice($task['date_start']) ?></td>
-      <td><?= ($task['date_end'] != '')?date_nice($task['date_end']):'' ?></td>
+      <td><?= date_nice($startDate) ?></td>
+      <td><?= ($endDate != '') ? date_nice($endDate):'' ?></td>
       <td>
-        <?
-          if($task['date_end'] == "") {
-            echo time_nice(time() - $task['date_start']); // this will determine how much time was elapse
+        <?php
+          if($endDate == "") {
+            $elapsedTime = time() - $startDate; // this will determine how much time was elapse
           }else {
-            echo time_nice(($task['date_end'] - $task['date_start']));
+            $elapsedTime = $endDate - $startDate;
           }
+          echo time_nice($elapsedTime);
         ?>
       </td>
       <td><button class="btn btn-primary"><?= i('stop')?></button></td>
