@@ -26,12 +26,14 @@ switch ($_GET['mode']) {
         'status' => 1
     ];
     $data[$id] = $newTask;
+
     if (!save($data)) {
         echo "Failed to save new task.";
         exit;
     } else {
         echo "Task added successfully.";
     }
+    var_dump($data); // Show the current state of data 
     break;
 
   case 'tally':
