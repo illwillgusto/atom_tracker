@@ -14,6 +14,13 @@ if (!$data) {
 }
 
 switch ($_GET['mode']) {
+
+  case 'tally':
+    # code...
+    break;
+
+
+
     case 'build':
       foreach ($data as $task) {
         $startDate = $task['date_start'];
