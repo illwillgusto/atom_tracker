@@ -5,6 +5,15 @@ $json = file_get_contents('data.json');
 $data = json_decode($json, 1);
 
 
+switch ($$_GET['mode']) {
+  case 'value':
+
+    case 'build':
+      # code...
+      break;
+  
+}
+
 foreach ($data as $task) {?> <!-- task is holding the information that can then be echoed -->
     <tr>
       <td><?= $task['name'] ?></td>
