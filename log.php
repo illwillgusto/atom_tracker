@@ -9,12 +9,7 @@ switch ($$_GET['mode']) {
   case 'value':
 
     case 'build':
-      # code...
-      break;
-  
-}
-
-foreach ($data as $task) {?> <!-- task is holding the information that can then be echoed -->
+      foreach ($data as $task) {?> <!-- task is holding the information that can then be echoed -->
     <tr>
       <td><?= $task['name'] ?></td>
       <td><?= date_nice($task['date_start']) ?></td>
@@ -31,4 +26,10 @@ foreach ($data as $task) {?> <!-- task is holding the information that can then 
       <td><button class="btn btn-primary"><?= i('stop')?></button></td>
       <td><button class="btn btn-danger"><?= i('times')?></button></td>
     </tr>
-<?php }?>
+<?php }
+
+      break;
+
+}
+
+?>
