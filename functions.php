@@ -19,4 +19,8 @@ function time_nice($seconds) {
 
   echo '<span class="hours">'.$h.'</span> hrs : <span class="minutes">'.$m.'</span> mins'; // Display result
 }
+
+function save($data) {
+  $json = json_encode($data);
+}
 ?>
