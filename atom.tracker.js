@@ -1,5 +1,6 @@
 function build() {
   $('#log').load('log.php?mode=build'); // allow us to take the data from the log.php and display it on the main page
+  tally();
 }
 
 function tally() {
