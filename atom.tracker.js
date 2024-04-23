@@ -2,6 +2,10 @@ function build() {
   $('#log').load('log.php?mode=build'); // allow us to take the data from the log.php and display it on the main page
 }
 
+function tally() {
+  $('#tally').load('log.php?mode=tally'); //allow us to pull the data and display it in the Total Time log
+}
+
 
 $(document).ready(function () {
 
@@ -26,7 +30,6 @@ build();
   });
 
 
-  $('#tally').load('log.php?mode=tally'); //allow us to pull the data and display it in the Total Time log
 
 
 });
