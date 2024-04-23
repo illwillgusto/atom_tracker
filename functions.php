@@ -32,5 +32,8 @@ function save($data) {
     echo "Failed to write to file!";
     return false;
   }
+
+  fclose($file); // Ensure the file is closed properly
+  return true; // Return true to indicate success 
 }
 ?>
