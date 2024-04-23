@@ -8,6 +8,10 @@ ini_set('display_errors', 1);
 $json = file_get_contents('data.json');
 $data = json_decode($json, 1);
 
+if (!$data) {
+  echo "Error: Data could not be decoded or is empty.";
+  exit; // Add error handling for empty or invalid JSON *optional 
+}
 
 switch ($_GET['mode']) {
   case 'value':
