@@ -16,7 +16,13 @@ if (!$data) {
 switch ($_GET['mode']) {
 
   case 'tally':
-    # code...
+    $count = 0;
+    foreach ($data as $task) {
+      $startDate = $task['date_start'];
+      $endDate = $task['date_end'];
+      $count = $count + ($endDate - $startDate);
+    }
+    echo time_nice($count);
     break;
 
 
