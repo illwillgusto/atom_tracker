@@ -5,7 +5,7 @@ $json = file_get_contents('data.json');
 $data = json_decode($json, 1);
 
 
-switch ($$_GET['mode']) {
+switch ($_GET['mode']) {
   case 'value':
 
     case 'build':
@@ -31,5 +31,3 @@ switch ($$_GET['mode']) {
       break;
 
 }
-
-

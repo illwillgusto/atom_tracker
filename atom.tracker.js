@@ -9,10 +9,10 @@ $(document).ready(function () {
 
     $.ajax({
       url: "log.php",
-      data: data,
+      data: data
     });
   });
 
-  $('#log').load('log.php'); // allow us to take the data from the log.php and display it on the main page
+  $('#log').load('log.php?mode=build'); // allow us to take the data from the log.php and display it on the main page
 
 });
