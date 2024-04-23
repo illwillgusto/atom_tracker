@@ -15,6 +15,15 @@ if (!$data) {
 
 switch ($_GET['mode']) {
 
+  case 'new':
+    $time = time();
+    $data[$time] ['id'] = $time;
+    $data['time']['name'] = $_GET['name'];
+    $data[$time]['date_start'] = $time;
+    $data[$time]['date_end'] = '';
+    $data[$time]['status'] = 1;
+    break;
+
   case 'tally':
     $count = 0;
     foreach ($data as $task) {
