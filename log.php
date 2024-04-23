@@ -16,13 +16,14 @@ if (!$data) {
 switch ($_GET['mode']) {
 
   case 'new':
-    $time = time();
-    $data[$time] ['id'] = $time;
-    $data['time']['name'] = $_GET['name'];
-    $data[$time]['date_start'] = $time;
-    $data[$time]['date_end'] = '';
-    $data[$time]['status'] = 1;
-    save($data);
+      $id = time();
+      $data[$id]['id'] = $id;
+      $data[$id]['task'] = $_GET['task'];
+      $data[$id]['date_start'] = $id;
+      $data[$id]['date_end'] = '';
+      $data[$id]['date_entered'] = $id;
+      $data[$id]['status'] = 1;
+      save($data); // Save changes
     break;
 
   case 'tally':
