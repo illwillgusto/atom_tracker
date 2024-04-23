@@ -21,7 +21,11 @@ function time_nice($seconds) {
 }
 
 function save($data) {
-  $json = json_encode($data); //covert the json data
+  $json = json_encode($data, JSON_PRETTY_PRINT); //covert the json data
+  if ($json === false) {
+    echo "Error encoding JSON: " . json_last_error_msg();
+    return false; // Provide error feedback 
+  }
   $file = fopen("data.json", "w") or die("Unable to open file!"); //open the json file and prepare to use the write method
   fwrite($file, $json); //write the file, which will overwrite everything
 }
