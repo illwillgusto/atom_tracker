@@ -10,14 +10,15 @@ $data = json_decode($json, 1);
 
 if (!$data) {
   echo "Error: Data could not be decoded or is empty.";
-  exit; // Add error handling for empty or invalid JSON *optional 
+  exit; // Add error handling for empty or invalid JSON *optional
 }
 
 switch ($_GET['mode']) {
-  case 'value':
-
     case 'build':
-      foreach ($data as $task) {?> <!-- task is holding the information that can then be echoed -->
+      foreach ($data as $task) {
+        $startDate = $task['date_start'];
+        $endDate = $task['date_end'];
+        ?> <!-- task is holding the information that can then be echoed -->
     <tr>
       <td><?= $task['name'] ?></td>
       <td><?= date_nice($task['date_start']) ?></td>
