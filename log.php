@@ -22,6 +22,7 @@ switch ($_GET['mode']) {
     $data[$time]['date_start'] = $time;
     $data[$time]['date_end'] = '';
     $data[$time]['status'] = 1;
+    save($data);
     break;
 
   case 'tally':
