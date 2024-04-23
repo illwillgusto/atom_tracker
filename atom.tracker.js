@@ -9,7 +9,8 @@ $(document).ready(function () {
 
     $.ajax({
       url: "log.php?mode=new",
-      data: data
+      data: data,
+      method: 'GET'
     });
   });
 
