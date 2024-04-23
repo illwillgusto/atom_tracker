@@ -33,7 +33,7 @@ switch ($_GET['mode']) {
     } else {
         echo "Task added successfully.";
     }
-    var_dump($data); // Show the current state of data 
+    var_dump($data); // Show the current state of data
     break;
 
   case 'tally':
